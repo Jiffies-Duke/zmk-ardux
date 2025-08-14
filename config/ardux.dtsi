@@ -57,7 +57,7 @@
 //#define ARDUX_BIG 1
 // If you use COLEMAK as your standard keyboard layout, you may want this
 //     This define will make base ardux keys and N more in line with COLEMAK
-//#define ARDUX_COLEMAK 1
+#define ARDUX_COLEMAK 1
 
 /*****************************************
  * Define key positions used for combos
@@ -118,13 +118,13 @@
  *    https://github.com/zmkfirmware/zmk/issues/905
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 175
+#define TIMEOUT_COMBO_2 100
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 175
+#define TIMEOUT_COMBO_3 100
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 175
+#define TIMEOUT_COMBO_4 100
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
 #define TIMEOUT_LAYER_HOLD 200
