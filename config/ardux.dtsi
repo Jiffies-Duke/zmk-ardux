@@ -118,16 +118,16 @@
  *    https://github.com/zmkfirmware/zmk/issues/905
  *****************************************/
 #if !defined TIMEOUT_COMBO_2
-#define TIMEOUT_COMBO_2 250
+#define TIMEOUT_COMBO_2 150
 #endif
 #if !defined TIMEOUT_COMBO_3
-#define TIMEOUT_COMBO_3 250
+#define TIMEOUT_COMBO_3 150
 #endif
 #if !defined TIMEOUT_COMBO_4
-#define TIMEOUT_COMBO_4 250
+#define TIMEOUT_COMBO_4 150
 #endif
 #if !defined TIMEOUT_LAYER_HOLD
-#define TIMEOUT_LAYER_HOLD 300
+#define TIMEOUT_LAYER_HOLD 200
 #endif
 #if !defined TIMEOUT_STICKY_LEADER_KEY
 #define TIMEOUT_STICKY_LEADER_KEY 5000
@@ -262,6 +262,7 @@
 		combo_num_comma { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_I KEY_A>; bindings = <&kp COMMA>; };
 		combo_num_enter  { layers = <LAYER_ID_NUMBERS>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_E KEY_A>; bindings = <&kp ENTER>; };
 		combo_z1		{ layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <KEY_A KEY_T>; bindings = <&kp Z>; };
+		combo_z2    { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_2>; key-positions = <0 1 2 3>; bindings = <&kp Z>; };
 
 		/*****************************************
 		 * 3 key combos
@@ -287,7 +288,7 @@
 		combo_layer_bt_select { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_E KEY_S KEY_O>; bindings = <&tog LAYER_ID_BT_SEL>; };
 		combo_bt_clr          { timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_R KEY_Y KEY_T KEY_I>; bindings = <&bt BT_CLR>; };
 
-		combo_z { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
+		combo_z         { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_A KEY_R KEY_T KEY_S>; bindings = <&kp Z>; };
 		combo_caps_lock { layers = <LAYER_ID_BASE>; timeout-ms = <TIMEOUT_COMBO_4>; key-positions = <KEY_O KEY_I KEY_Y KEY_A>; bindings = <&kp CAPS>; };
 	};
 };
